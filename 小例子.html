@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div a{
+			padding:10px 30px;
+			background: red;
+			text-decoration: none;
+			line-height:30px;
+			border: 1px solid #eee; 
+			float: left;
+			margin-right: 15px;
+		}
+		#box{
+			width: 600px;
+			height: 370px;
+			border: 1px solid #999;
+			background-color: #fff;
+			clear: left;
+		}
+		#box ul{
+			list-style: none;
+		}
+		
+		#box ul  li img{
+			position: absolute;
+			top: -330px;
+			display:none;
+			animation: 
+
+		}
+		#box ul  li a{
+			width: 550px;
+			height: 350px;
+			margin:2px;
+			background: #ccc;
+			display: none;
+		}
+		#box ul  li a .b{
+			width: 200px;
+			height: 350px;
+			background: red;
+			float: left;
+		}
+		#box ul  li a .c{
+			width: 300px;
+			height: 350px;
+			background:#233;
+			float: right;
+		}
+		#box ul li img:target{
+			display:block;
+			top: 70px;
+		}
+		#box ul li a:target{
+			display:block;
+		}
+	</style>
+</head>
+<body>
+	<div><a href="#img1">一</a></div>
+	<div><a href="#img2">二</a></div>
+	<div><a href="#img3">三</a></div>
+	<div><a href="#a">四</a></div>
+	<br/>
+	<div id="box">
+		<ul>
+			<li>
+				<img id="img1" src="images/1a1.jpg"/>
+				<img id="img2" src="images/1a2.jpg"/>
+				<img id="img3" src="images/1a3.jpg"/>
+				<div id="a">
+					<div class="b"></div>
+					<div class="c"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
